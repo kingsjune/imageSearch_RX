@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65198F77215CDC8D53D406F0 /* Pods_KakaoImgSearch_RXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC2D0BE0A858BB2B04A336C /* Pods_KakaoImgSearch_RXTests.framework */; };
+		AD34D6CCFAD285382DAFF53C /* Pods_KakaoImgSearch_RX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2F9BD0DDCAF761B90A70CE /* Pods_KakaoImgSearch_RX.framework */; };
+		C52C27DE25E62B2E0003D7CA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52C27DD25E62B2E0003D7CA /* DetailViewController.swift */; };
+		C52C27FF25E703450003D7CA /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52C27FE25E703450003D7CA /* DetailViewModel.swift */; };
+		C588E75D25E35FF500666AED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C588E75C25E35FF500666AED /* AppDelegate.swift */; };
+		C588E76125E35FF500666AED /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C588E76025E35FF500666AED /* MainViewController.swift */; };
+		C588E76425E35FF500666AED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C588E76225E35FF500666AED /* Main.storyboard */; };
+		C588E76625E35FF600666AED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C588E76525E35FF600666AED /* Assets.xcassets */; };
+		C588E76925E35FF600666AED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C588E76725E35FF600666AED /* LaunchScreen.storyboard */; };
+		C588E77425E35FF600666AED /* KakaoImgSearch_RXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C588E77325E35FF600666AED /* KakaoImgSearch_RXTests.swift */; };
+		C588E7B825E370E900666AED /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C588E7B725E370E900666AED /* APIManager.swift */; };
+		C588E7DE25E377D800666AED /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = C588E7DD25E377D800666AED /* Meta.swift */; };
+		C588E7E425E377F900666AED /* Documents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C588E7E325E377F900666AED /* Documents.swift */; };
+		C588E7EA25E3798300666AED /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C588E7E925E3798300666AED /* ResponseModel.swift */; };
+		C588E80425E386AB00666AED /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C588E80325E386AB00666AED /* ResultViewModel.swift */; };
+		C588E82825E3B24C00666AED /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C588E82625E3B24C00666AED /* ImageCell.swift */; };
+		C588E82925E3B24C00666AED /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C588E82725E3B24C00666AED /* ImageCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C588E77025E35FF600666AED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C588E75125E35FF500666AED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C588E75825E35FF500666AED;
+			remoteInfo = KakaoImgSearch_RX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1BB6C5E8D2024601E30293DE /* Pods-KakaoImgSearch_RX-KakaoImgSearch_RXUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoImgSearch_RX-KakaoImgSearch_RXUITests.release.xcconfig"; path = "Target Support Files/Pods-KakaoImgSearch_RX-KakaoImgSearch_RXUITests/Pods-KakaoImgSearch_RX-KakaoImgSearch_RXUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1C9F74B145C4FC4782F31634 /* Pods-KakaoImgSearch_RX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoImgSearch_RX.debug.xcconfig"; path = "Target Support Files/Pods-KakaoImgSearch_RX/Pods-KakaoImgSearch_RX.debug.xcconfig"; sourceTree = "<group>"; };
+		3E984C4242699DBA4FD78312 /* Pods_KakaoImgSearch_RX_KakaoImgSearch_RXUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaoImgSearch_RX_KakaoImgSearch_RXUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F3B2FD8BD11077081534B07 /* Pods-KakaoImgSearch_RXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoImgSearch_RXTests.release.xcconfig"; path = "Target Support Files/Pods-KakaoImgSearch_RXTests/Pods-KakaoImgSearch_RXTests.release.xcconfig"; sourceTree = "<group>"; };
+		5A2F9BD0DDCAF761B90A70CE /* Pods_KakaoImgSearch_RX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaoImgSearch_RX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A226AFD89D45CE0A6E35355D /* Pods-KakaoImgSearch_RX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoImgSearch_RX.release.xcconfig"; path = "Target Support Files/Pods-KakaoImgSearch_RX/Pods-KakaoImgSearch_RX.release.xcconfig"; sourceTree = "<group>"; };
+		C52C27DD25E62B2E0003D7CA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C52C27FE25E703450003D7CA /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		C588E75925E35FF500666AED /* KakaoImgSearch_RX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakaoImgSearch_RX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C588E75C25E35FF500666AED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C588E76025E35FF500666AED /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C588E76325E35FF500666AED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C588E76525E35FF600666AED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C588E76825E35FF600666AED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C588E76A25E35FF600666AED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C588E76F25E35FF600666AED /* KakaoImgSearch_RXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KakaoImgSearch_RXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C588E77325E35FF600666AED /* KakaoImgSearch_RXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoImgSearch_RXTests.swift; sourceTree = "<group>"; };
+		C588E77525E35FF600666AED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C588E7B725E370E900666AED /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		C588E7DD25E377D800666AED /* Meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
+		C588E7E325E377F900666AED /* Documents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Documents.swift; sourceTree = "<group>"; };
+		C588E7E925E3798300666AED /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		C588E80325E386AB00666AED /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
+		C588E82625E3B24C00666AED /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		C588E82725E3B24C00666AED /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
+		DBC2D0BE0A858BB2B04A336C /* Pods_KakaoImgSearch_RXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaoImgSearch_RXTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E96D9A1B67512F7A71DF4E07 /* Pods-KakaoImgSearch_RX-KakaoImgSearch_RXUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoImgSearch_RX-KakaoImgSearch_RXUITests.debug.xcconfig"; path = "Target Support Files/Pods-KakaoImgSearch_RX-KakaoImgSearch_RXUITests/Pods-KakaoImgSearch_RX-KakaoImgSearch_RXUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F6FEB83AF45E3C15E643643E /* Pods-KakaoImgSearch_RXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoImgSearch_RXTests.debug.xcconfig"; path = "Target Support Files/Pods-KakaoImgSearch_RXTests/Pods-KakaoImgSearch_RXTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C588E75625E35FF500666AED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD34D6CCFAD285382DAFF53C /* Pods_KakaoImgSearch_RX.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C588E76C25E35FF600666AED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65198F77215CDC8D53D406F0 /* Pods_KakaoImgSearch_RXTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		704CD48ED51E76FD8B35C057 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A2F9BD0DDCAF761B90A70CE /* Pods_KakaoImgSearch_RX.framework */,
+				3E984C4242699DBA4FD78312 /* Pods_KakaoImgSearch_RX_KakaoImgSearch_RXUITests.framework */,
+				DBC2D0BE0A858BB2B04A336C /* Pods_KakaoImgSearch_RXTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C588E75025E35FF500666AED = {
+			isa = PBXGroup;
+			children = (
+				C588E75B25E35FF500666AED /* KakaoImgSearch_RX */,
+				C588E77225E35FF600666AED /* KakaoImgSearch_RXTests */,
+				C588E75A25E35FF500666AED /* Products */,
+				E3B56C4331C0F5593BB084B1 /* Pods */,
+				704CD48ED51E76FD8B35C057 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C588E75A25E35FF500666AED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C588E75925E35FF500666AED /* KakaoImgSearch_RX.app */,
+				C588E76F25E35FF600666AED /* KakaoImgSearch_RXTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C588E75B25E35FF500666AED /* KakaoImgSearch_RX */ = {
+			isa = PBXGroup;
+			children = (
+				C588E7B225E365B000666AED /* Network */,
+				C588E7FF25E3864100666AED /* ViewModel */,
+				C588E7D925E3761A00666AED /* Model */,
+				C588E7B125E365A600666AED /* View */,
+				C588E75C25E35FF500666AED /* AppDelegate.swift */,
+				C588E76225E35FF500666AED /* Main.storyboard */,
+				C588E76525E35FF600666AED /* Assets.xcassets */,
+				C588E76725E35FF600666AED /* LaunchScreen.storyboard */,
+				C588E76A25E35FF600666AED /* Info.plist */,
+			);
+			path = KakaoImgSearch_RX;
+			sourceTree = "<group>";
+		};
+		C588E77225E35FF600666AED /* KakaoImgSearch_RXTests */ = {
+			isa = PBXGroup;
+			children = (
+				C588E77325E35FF600666AED /* KakaoImgSearch_RXTests.swift */,
+				C588E77525E35FF600666AED /* Info.plist */,
+			);
+			path = KakaoImgSearch_RXTests;
+			sourceTree = "<group>";
+		};
+		C588E7B125E365A600666AED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C588E81A25E3B05D00666AED /* Cell */,
+				C588E76025E35FF500666AED /* MainViewController.swift */,
+				C52C27DD25E62B2E0003D7CA /* DetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C588E7B225E365B000666AED /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C588E7B725E370E900666AED /* APIManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C588E7D925E3761A00666AED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C588E7DD25E377D800666AED /* Meta.swift */,
+				C588E7E325E377F900666AED /* Documents.swift */,
+				C588E7E925E3798300666AED /* ResponseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C588E7FF25E3864100666AED /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C588E80325E386AB00666AED /* ResultViewModel.swift */,
+				C52C27FE25E703450003D7CA /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C588E81A25E3B05D00666AED /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C588E82625E3B24C00666AED /* ImageCell.swift */,
+				C588E82725E3B24C00666AED /* ImageCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E3B56C4331C0F5593BB084B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C9F74B145C4FC4782F31634 /* Pods-KakaoImgSearch_RX.debug.xcconfig */,
+				A226AFD89D45CE0A6E35355D /* Pods-KakaoImgSearch_RX.release.xcconfig */,
+				E96D9A1B67512F7A71DF4E07 /* Pods-KakaoImgSearch_RX-KakaoImgSearch_RXUITests.debug.xcconfig */,
+				1BB6C5E8D2024601E30293DE /* Pods-KakaoImgSearch_RX-KakaoImgSearch_RXUITests.release.xcconfig */,
+				F6FEB83AF45E3C15E643643E /* Pods-KakaoImgSearch_RXTests.debug.xcconfig */,
+				3F3B2FD8BD11077081534B07 /* Pods-KakaoImgSearch_RXTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C588E75825E35FF500666AED /* KakaoImgSearch_RX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C588E78325E35FF600666AED /* Build configuration list for PBXNativeTarget "KakaoImgSearch_RX" */;
+			buildPhases = (
+				439FAB2F9496691DF9B751D9 /* [CP] Check Pods Manifest.lock */,
+				C588E75525E35FF500666AED /* Sources */,
+				C588E75625E35FF500666AED /* Frameworks */,
+				C588E75725E35FF500666AED /* Resources */,
+				E130711B2C36C46811AAE223 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KakaoImgSearch_RX;
+			productName = KakaoImgSearch_RX;
+			productReference = C588E75925E35FF500666AED /* KakaoImgSearch_RX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C588E76E25E35FF600666AED /* KakaoImgSearch_RXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C588E78625E35FF600666AED /* Build configuration list for PBXNativeTarget "KakaoImgSearch_RXTests" */;
+			buildPhases = (
+				E6ED491D1253C4748C53F71A /* [CP] Check Pods Manifest.lock */,
+				C588E76B25E35FF600666AED /* Sources */,
+				C588E76C25E35FF600666AED /* Frameworks */,
+				C588E76D25E35FF600666AED /* Resources */,
+				1983D648FD20DE779833C75A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C588E77125E35FF600666AED /* PBXTargetDependency */,
+			);
+			name = KakaoImgSearch_RXTests;
+			productName = KakaoImgSearch_RXTests;
+			productReference = C588E76F25E35FF600666AED /* KakaoImgSearch_RXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C588E75125E35FF500666AED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					C588E75825E35FF500666AED = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					C588E76E25E35FF600666AED = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = C588E75825E35FF500666AED;
+					};
+				};
+			};
+			buildConfigurationList = C588E75425E35FF500666AED /* Build configuration list for PBXProject "KakaoImgSearch_RX" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C588E75025E35FF500666AED;
+			productRefGroup = C588E75A25E35FF500666AED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C588E75825E35FF500666AED /* KakaoImgSearch_RX */,
+				C588E76E25E35FF600666AED /* KakaoImgSearch_RXTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C588E75725E35FF500666AED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C588E76925E35FF600666AED /* LaunchScreen.storyboard in Resources */,
+				C588E82925E3B24C00666AED /* ImageCell.xib in Resources */,
+				C588E76625E35FF600666AED /* Assets.xcassets in Resources */,
+				C588E76425E35FF500666AED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C588E76D25E35FF600666AED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1983D648FD20DE779833C75A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoImgSearch_RXTests/Pods-KakaoImgSearch_RXTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoImgSearch_RXTests/Pods-KakaoImgSearch_RXTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KakaoImgSearch_RXTests/Pods-KakaoImgSearch_RXTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		439FAB2F9496691DF9B751D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KakaoImgSearch_RX-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E130711B2C36C46811AAE223 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoImgSearch_RX/Pods-KakaoImgSearch_RX-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoImgSearch_RX/Pods-KakaoImgSearch_RX-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KakaoImgSearch_RX/Pods-KakaoImgSearch_RX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6ED491D1253C4748C53F71A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KakaoImgSearch_RXTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C588E75525E35FF500666AED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C52C27DE25E62B2E0003D7CA /* DetailViewController.swift in Sources */,
+				C588E7DE25E377D800666AED /* Meta.swift in Sources */,
+				C588E80425E386AB00666AED /* ResultViewModel.swift in Sources */,
+				C52C27FF25E703450003D7CA /* DetailViewModel.swift in Sources */,
+				C588E82825E3B24C00666AED /* ImageCell.swift in Sources */,
+				C588E7B825E370E900666AED /* APIManager.swift in Sources */,
+				C588E7E425E377F900666AED /* Documents.swift in Sources */,
+				C588E76125E35FF500666AED /* MainViewController.swift in Sources */,
+				C588E7EA25E3798300666AED /* ResponseModel.swift in Sources */,
+				C588E75D25E35FF500666AED /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C588E76B25E35FF600666AED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C588E77425E35FF600666AED /* KakaoImgSearch_RXTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C588E77125E35FF600666AED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C588E75825E35FF500666AED /* KakaoImgSearch_RX */;
+			targetProxy = C588E77025E35FF600666AED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C588E76225E35FF500666AED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C588E76325E35FF500666AED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C588E76725E35FF600666AED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C588E76825E35FF600666AED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C588E78125E35FF600666AED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C588E78225E35FF600666AED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C588E78425E35FF600666AED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C9F74B145C4FC4782F31634 /* Pods-KakaoImgSearch_RX.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KakaoImgSearch_RX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KakaoImgSearch-RX";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C588E78525E35FF600666AED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A226AFD89D45CE0A6E35355D /* Pods-KakaoImgSearch_RX.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KakaoImgSearch_RX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KakaoImgSearch-RX";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C588E78725E35FF600666AED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6FEB83AF45E3C15E643643E /* Pods-KakaoImgSearch_RXTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KakaoImgSearch_RXTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KakaoImgSearch-RXTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KakaoImgSearch_RX.app/KakaoImgSearch_RX";
+			};
+			name = Debug;
+		};
+		C588E78825E35FF600666AED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F3B2FD8BD11077081534B07 /* Pods-KakaoImgSearch_RXTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KakaoImgSearch_RXTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KakaoImgSearch-RXTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KakaoImgSearch_RX.app/KakaoImgSearch_RX";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C588E75425E35FF500666AED /* Build configuration list for PBXProject "KakaoImgSearch_RX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C588E78125E35FF600666AED /* Debug */,
+				C588E78225E35FF600666AED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C588E78325E35FF600666AED /* Build configuration list for PBXNativeTarget "KakaoImgSearch_RX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C588E78425E35FF600666AED /* Debug */,
+				C588E78525E35FF600666AED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C588E78625E35FF600666AED /* Build configuration list for PBXNativeTarget "KakaoImgSearch_RXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C588E78725E35FF600666AED /* Debug */,
+				C588E78825E35FF600666AED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C588E75125E35FF500666AED /* Project object */;
+}

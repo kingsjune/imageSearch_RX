@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="KakaoImgSearch_RX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B8H-jp-WZA">
+                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPp-Lq-ck9">
+                                        <rect key="frame" x="0.0" y="30" width="414" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="iPp-Lq-ck9" firstAttribute="leading" secondItem="B8H-jp-WZA" secondAttribute="leading" id="OX3-vu-SPn"/>
+                                    <constraint firstItem="iPp-Lq-ck9" firstAttribute="top" secondItem="B8H-jp-WZA" secondAttribute="top" constant="30" id="XWW-Qm-qQO"/>
+                                    <constraint firstAttribute="trailing" secondItem="iPp-Lq-ck9" secondAttribute="trailing" id="bLL-vy-cyZ"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="oOU-PZ-Oxt">
+                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Pui-45-LIQ">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="ljX-y0-Knm" customClass="ImageCell" customModule="KakaoImgSearch_RX" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="NLP-Yn-uAs">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="5JS-38-TZO">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B8H-jp-WZA" secondAttribute="trailing" id="2uF-K7-Rt7"/>
+                            <constraint firstItem="oOU-PZ-Oxt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IRq-O8-ltv"/>
+                            <constraint firstItem="B8H-jp-WZA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aaP-eY-rTQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oOU-PZ-Oxt" secondAttribute="bottom" id="bfd-GD-fs5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="B8H-jp-WZA" secondAttribute="bottom" id="bry-KY-aM9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oOU-PZ-Oxt" secondAttribute="trailing" id="fql-Ac-dIv"/>
+                            <constraint firstItem="5JS-38-TZO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gJ9-5o-fBQ"/>
+                            <constraint firstItem="5JS-38-TZO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="maL-pz-s3k"/>
+                            <constraint firstItem="oOU-PZ-Oxt" firstAttribute="top" secondItem="5JS-38-TZO" secondAttribute="bottom" id="shp-jD-Sfg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5JS-38-TZO" secondAttribute="trailing" id="woh-ZS-hve"/>
+                            <constraint firstItem="B8H-jp-WZA" firstAttribute="top" secondItem="5JS-38-TZO" secondAttribute="bottom" id="y1V-RA-MYb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lxg-mI-RhP"/>
+                    <connections>
+                        <outlet property="collectionView" destination="oOU-PZ-Oxt" id="Vnh-Lf-6a1"/>
+                        <outlet property="noResultLabel" destination="iPp-Lq-ck9" id="fSM-NJ-ekU"/>
+                        <outlet property="noResultView" destination="B8H-jp-WZA" id="c8e-xn-sS2"/>
+                        <outlet property="searchBar" destination="5JS-38-TZO" id="0HJ-Lr-hki"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29" y="68"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="hAr-uU-gZw">
+            <objects>
+                <viewController storyboardIdentifier="DetailVC" id="s6w-mn-pVM" customClass="DetailViewController" customModule="KakaoImgSearch_RX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ry0-HT-EPc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rB5-gN-3bF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="blm-o0-FFG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KfC-UV-ilW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="763.768115942029" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
